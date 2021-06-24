@@ -1,0 +1,204 @@
+<!doctype html>
+<title> donation work </title>
+<head>
+	<style>
+		#star{color:red;}
+		.center{text-align: center;}			
+	</style>
+	
+<body style="background-color: lightGray;"> 
+	<p> <b id="star"> * </b> - Denotes Required Information </p>
+	<p><b> > 1 Donation </b>&nbsp &nbsp > 2 Confirmation &nbsp &nbsp > Thank You! 
+	<h3> <p style = "color:red;">	 <b>Donor information</b> </h3> </p>
+	
+<form>
+	
+	<b> First Name: </b> 
+	<label for="fname">  <b id="star">*</b>  </label> <br>
+	<input type ="text" id="fname" name="fname"> <br>
+	
+	<b> Last Name: </b>
+	<label for="lname">  <b id="star">*</b>  </label> <br>
+	<input type ="text" id="lname" name="lname"> <br>
+	
+	<b> Company: </b>
+	<label for="cpany">  </label> <br>
+	<input type ="text" id="cpany" name="cpany"><br>
+	
+	<b> Address 1: </b> 
+	<label for="add1">  <b id="star">*</b>  </label> <br>
+	<input type ="text" id="add1" name="add1"><br>
+	
+	<b> Address 2: </b> 
+	<label for="add2">   </label> <br>
+	<input type ="text" id="add2" name="add2"><br>
+	
+	<b> City: </b> 
+	<label for="city">  <b id="star">*</b>  </label> <br>
+	<input type ="text" id="city" name="city"><br>
+	
+	<b> State: </b> 
+	<label for="state">  <b id="star">*</b>  </label> <br>
+	<select id="state" name="state">
+	<option selected>Selecte a State</option>
+	<option value="barishal">Barishal</option>
+	<option value="chattoagram">Chattogram</option>
+	<option value="dhaka">Dhaka</option>
+	<option value="khulna">Khulna</option>
+	<option value="mymensingh">Mymensingh</option>
+	<option value="rajshahi">Rajshahi</option>
+	<option value="rangpur">Rangpur</option>
+	<option value="sylhet">Sylhet</option>
+	</select> <br>
+	
+	<b> Zip Code: </b> 
+	<label for="zip">  <b id="star">*</b>  </label> <br>
+	<input type ="text" id="zip" name="zip"><br>
+	
+	<b> Country: </b> 
+	<label for="country">  <b id="star">*</b>  </label> <br>
+	<select id="country" name="country">
+	<option selected>Selecte a Country</option>
+	<option value="afganistan">Afganistan</option>
+	<option value="bd">Bangladesh</option>
+	<option value="canada">Canada</option>
+	<option value="denmark">Denmark</option>
+	<option value="egypt">Egypt</option>
+	<option value="finland">Finlad</option>
+	<option value="ghana">Ghana</option>
+	<option value="usa">USA</option>
+	</select> <br>
+	
+	<b> Phone: </b> 
+	<label for="phn">   </label> <br>
+	<input type ="text" id="phn" name="phn"><br>
+	
+	<b> Fax: </b> 
+	<label for="fax">   </label> <br>
+	<input type ="text" id="fax" name="fax"><br>
+	
+	<b> Email: </b> 
+	<label for="email">  <b id="star">*</b>  </label> <br>
+	<input type ="text" id="email" name="email"><br>
+	
+	<b> Donation Amount: </b>
+	<label for="damount">  <b id="star">*</b>  </label>
+    <input type="radio" id="none" name="amount" value="none">
+    <label for="none">None</label>
+    <input type="radio" id="$50" name="amount" value="$50">
+    <label for="$50">$50</label>
+    <input type="radio" id="$75" name="amount" value="$75">
+    <label for="$75">$75</label>
+    <input type="radio" id="$100" name="amount" value="$100">
+    <label for="$100">$100</label>
+    <input type="radio" id="$250" name="amount" value="$250">
+    <label for="$250">$250</label>
+    <input type="radio" id="other" name="amount" value="other">
+    <label for="other">Other</label><br>
+    <small>(Check a button or type your amount)</small>
+	<b> Other Amount: $</b> 
+	<label for="oamount"></label>
+	<input type ="text" id="oamount" name="oamount"><br>
+	
+	<label for="recurrdonation"> <b> Reccuring Donation </b> </label>
+	<small>(check if yes)</small>
+	<input type="checkbox" id="recurrdonation" name="recurrdonation">
+	<small>I am intrested in giving on a regular basis.</small><br>
+	<label for="monthlyCcard">Monthly Credit Card $ </label>
+	<input id="monthlyCcard" name="monthlyCcard" maxlength="8" size=12>
+			For
+	<input id="mccMonth" name="mccMonth" maxlength="2" size=2>
+	<label for="mccMonth">Months </label>
+	
+	<h3> <p style = "color:red;">	 <b>Honorarium and Memorial Donation Information</b>   </h3> 
+	<b> I would like to make this donation </b> <br>
+	<input type="radio" id="th" name="th">
+	<label for="th">To honor</label>
+	<input type="radio" id="inmemory" name="inmemory">
+	<label for="inmemory">In memory of</label> <br>
+	<b> Name: </b> 
+	<label for="hname">   </label> <br>
+	<input type ="text" id="hname" name="hname"><br>
+	<b> Acknowlage Donation To: </b> 
+	<label for="ackDonation">   </label> <br>
+	<input type ="text" id="ackDonation" name="ackDonation"><br>
+	<b> Address: </b> 
+	<label for="hAdd">   </label> <br>
+	<input type ="text" id="hAdd" name="hAdd"><br>
+	<b> City: </b> 
+	<label for="hCity">   </label> <br>
+	<input type ="text" id="hCity" name="hCity"><br>
+	
+	<b> State: </b> 
+	<label for="hState">  </label> <br>
+	<select id="hState" name="hState">
+	<option selected>Selecte a State</option>
+	<option value="hBarishal">Barishal</option>
+	<option value="hChattoagram">Chattogram</option>
+	<option value="hDhaka">Dhaka</option>
+	<option value="hKhulna">Khulna</option>
+	<option value="hMymensingh">Mymensingh</option>
+	<option value="hRajshahi">Rajshahi</option>
+	<option value="hRangpur">Rangpur</option>
+	<option value="hSylhet">Sylhet</option> 
+	</select><br>
+	<b> Zip: </b> 
+	<label for="hzip">  </label> <br>
+	<input type ="text" id="hzip" name="hzip"><br>
+	</p>
+	
+	<p> <b style = "color:red;">Additional Information</b> <br>	
+	<small>Please enter your name, company or organization as you would like it to appear in our publications:</small>
+	</p>
+	
+	<b> Name: </b> 
+	<label for="addname">   </label> <br>
+	<input type ="text" id="addname" name="addname"><br>
+	<input type="checkbox" id="addInfo" name="addInfo">
+	<small>I would like my gift to remain anonymous.</small> <br>
+	<input type="checkbox" id="addInfo" name="addInfo">
+	<small>My employer offers a matching gift program.I will mail the matching gift form.</small> <br>
+	<input type="checkbox" id="addInfo" name="addInfo">
+	<small>Please save the cost of aknowledging this gift by not mailing a thank you letter.</small> <br>
+	<p></p>
+	<label for="comments"> <b>Comments </b> </label>
+	<small>(Please type any questions or feedback here)</small><br>	
+	<textarea rows="6" cols="60" name="comment" form="comment"></textarea><br>
+	
+	<b> How may we contact you?</b><br>
+	<input type="checkbox" id="contact" name="contact">
+	<small> E-mail </small> <br>
+	<input type="checkbox" id="contact" name="contact">
+	<small> Postal Mail </small> <br>
+	<input type="checkbox" id="contact" name="contact">
+	<small> Telephone </small> <br>
+	<input type="checkbox" id="contact" name="contact">
+	<small> Fax </small> <br>
+	
+	<p style = "color:gray;"><small>I would like to receive newletters and information about special events by: </small><br>
+	<input type="checkbox" id="contact" name="contact">
+	<small style="color:black";>E-mail</small><br>
+	<input type="checkbox" id="contact" name="contact">
+	<small style="color:black";>Postal Mail</small><br></p>
+	
+	<input type="checkbox" id="contact" name="contact">
+	<small> I would like the infromation about volunteering with the</small><br>
+	<textarea rows="1" cols="100"> </textarea><br>
+	
+		<p class= "center";> <input type="reset" value="Reset">
+		<input type="button" value="Continue">
+		</p>
+	
+	<p> <img src="http://simpleicon.com/wp-content/uploads/lock-2.png" alt="safe site" style="width:20px;height:20px;">
+	<small> Donate online with confidence. You are on a secure server </small>
+	</p>
+	
+	<p><small>If you have any problems or questions , please contact 
+	<a href=" " style="color:gray;" title="For further information mail us">support. </a>
+	</small> </p>
+	
+</form>
+	
+</body>
+</head>
+</html>
