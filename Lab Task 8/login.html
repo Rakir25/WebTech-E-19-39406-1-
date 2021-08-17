@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+  
+<script src="JS/login.js"></script>
+<form method="post" style="width: 300px" >
+ <fieldset >
+  <legend>LOGIN</legend>
+
+</div><br>
+
+<label for="name">User name :</label>
+<input type="text" id="name" name="name" onkeyup="checkName()" onblur="checkName()" onclick="checkName()"><br>
+<span id="nameErr"></span>
+<br><br>
+
+<label for="password">Password :</label>
+<input type="password" id="password" name="password" onkeyup="checkPassword()" onblur="checkPassword()" onclick="checkPassword()"><br>
+<span id="passwordErr"></span>
+
+<hr>
+
+<input type="checkbox" id="remember_me" name="remember_me">
+<label for="remember_me">Remember Me</label><br><br>
+
+<input type="submit" value="Submit"><a href="forgot password.html">Forgot Password?</a>
+
+</div>
+ </fieldset>
+</form>
+</body>
+</html>

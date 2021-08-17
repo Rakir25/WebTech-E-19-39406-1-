@@ -1,0 +1,55 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title>Registration</title> 
+</head>  
+<body>
+
+  <style>
+    .error {color: #FF0000;}
+    </style>
+
+  <script src="JS/registration.js"></script>
+
+<fieldset style="margin: 5% ;width:650px ;">
+<legend>REGISTRATION</legend>                 
+  <form name="form" method="post"> 
+    <label for="name">Name :</label>
+    <input type="text" id="name" name="name" onkeyup="checkName()" onblur="checkName()" onclick="checkName()">
+    <span class="error" id="nameErr"></span><hr>
+  
+    <label for="email">Email :</label>
+    <input type="text" id="email" name="email" placeholder="example@email.com" onkeyup="checkEmail()" onblur="checkEmail()" onclick="checkEmail()">
+    <span class="error" id="emailErr"> </span><hr>
+  
+    <label for="mobile_number">Mobile Number :</label>
+    <input type="tel" id="mobile_number" name="mobile_number" onkeyup="checkMoblieNumber()" onblur="checkMoblieNumber()" onclick="checkMoblieNumber()">
+    <span class="error" id="mobile_numberErr"> </span><hr>
+  
+    <label for="password">Password :</label>
+    <input type="password" id="password" name="password" onkeyup="checkPassword()" onblur="checkPassword()" onclick="checkPassword()">
+    <span class="error" id="passwordErr"></span><hr>
+  
+    <label for="confirm_password">Confirm Password :</label>
+    <input type="password" id="confirm_password" name="confirm_password" onkeyup="checkConfirmPassword()" onblur="checkConfirmPassword()" onclick="checkConfirmPassword()">
+    <span class="error" id="confirm_passwordErr"></span><hr>
+  
+    <label> Gender:</label> 
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label> 
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other </label>  
+    <span class="error"></span><hr>
+
+  <label>Date of Birthday:</label>
+  <input type="date" placeholder="mm/dd/yyyy" name="dob" id="dob" onkeyup="checkdob()" onblur="checkdob()" onclick="checkdob()"> 
+  <span class="error" id="dobErr"></span> <hr><br>
+
+  <input type="submit" name="submit" value="Submit">
+  <input type="reset" name="reset" value="Reset">
+</form>  
+</fieldset>
+</body>  
+</html>  
